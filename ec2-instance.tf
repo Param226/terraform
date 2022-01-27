@@ -3,7 +3,7 @@ provider "aws" {
         secret_key = "acO+GEZPxPBhJ/hJrzYMHpPWTaGujz0Xck0K+BHH"
         region = "ap-south-1"
 }
-esource "aws_instance" "myfirst_instance" {
+resource "aws_instance" "myfirst_instance" {
         ami = "ami-0af25d0df86db00c1"
         count = 1
         key_name = "key"
