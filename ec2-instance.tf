@@ -13,28 +13,3 @@ resource "aws_instance" "myfirst_instance" {
                 Name = "terraform_instance"
         }
 }
-# resource “aws_security_group" "my_security_group" {
-#         name = "my_security_group"
-#         description = "security group for terraform ec2 instance"
-#         ingress {
-#                 from_port = 8080
-#                 to_port = 8080
-#                 protocol = "tcp"
-#                 cidr_blocks = ["0.0.0.0/0]
-#         }
-#         ingress {
-#                 from_port = 22
-#                 to_port = 22
-#                 protocol = "tcp"
-#                 cidr_blocks = ["0.0.0.0/0]
-#         }
-#         egress {
-#                 from_port   = 0
-#                 to_port     = 65535
-#                 protocol    = "tcp"
-#                 cidr_blocks = ["0.0.0.0/0"]
-#         }
-#         tags {
-#                 name = "my_security_group"
-#         }
-# }
